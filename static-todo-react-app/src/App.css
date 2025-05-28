@@ -1,0 +1,30 @@
+/* 1. Center all content in the App */
+.App {
+  display: flex;                /* Enables Flexbox layout */
+  flex-direction: column;       /* Stack children vertically */
+  align-items: center;          /* Center children horizontally */
+  padding: 20px;                /* Adds space inside the container */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Sets a clean, readable font */
+}
+
+/* 2. Container for profile cards - add spacing */
+.class-container {
+  display: flex;                /* Use Flexbox for the container */
+  gap: 20px;                   /* Space between each profile card */
+  flex-wrap: wrap;             /* Allows cards to wrap to next line if needed */
+  justify-content: center;     /* Center the cards horizontally */
+  max-width: 800px;            /* Limit container width for better layout */
+  width: 100%;   
+ /* Full width on small screens */
+}
+
+/* 3. Style for each profile card */
+.card {
+  border: 1px solid #ccc;      /* Light gray border around the card */
+  padding: 15px;               /* Space inside the card */
+  border-radius: 5px;          /* Rounded corners */
+  box-shadow: 1px 1px 5px rgba(175, 110, 110, 0.1); /* Soft shadow for depth */
+  width: 220px;                /* Fixed width for consistency */
+  background-color: #b76262;  /* Light background color */
+  text-align: left;            /* Align text to left */
+}
